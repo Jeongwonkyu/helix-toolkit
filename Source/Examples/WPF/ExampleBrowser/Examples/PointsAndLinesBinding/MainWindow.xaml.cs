@@ -130,9 +130,7 @@ namespace PointsAndLinesBinding
 
             if (this.ShowLinesVisual3D || this.ShowPointsVisual3D)
             {
-                var newPoints =
-                    PointsAndLinesDemo.MainWindow.GeneratePoints(this.NumberOfPoints, this.watch.ElapsedMilliseconds * 0.001)
-                        .ToArray();
+                var newPoints = PointsAndLinesDemo.MainWindow.GeneratePoints(this.NumberOfPoints, this.watch.ElapsedMilliseconds * 0.001).ToArray();
                 if (this.ShowPointsVisual3D)
                 {
                     var pc = new Point3DCollection(newPoints);
